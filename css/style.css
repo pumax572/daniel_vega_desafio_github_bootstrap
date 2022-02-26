@@ -1,376 +1,141 @@
 *{
-    margin:0;
-    padding:0;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body{
-    background-color: rgb(176, 230, 176);
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.2rem;
-    line-height: 1.4em;
-    max-height: 100vh;
-}
-body {
-    background-image: url("../images/fondo.jpg");
-    background-position: top center;
-    Background-repeat: repeat;
-    
-  }
-
-.header{
-    background-color: rgb(26, 107, 26);
-    color: white;
-    padding: 2rem 0;
-    position: sticky;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-decoration: none;
-}
-.headerIndex{
-    background-color: rgb(26, 107, 26);
-    color: white;
-    padding: 2rem 0;
-    position: sticky;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-decoration: none;
-}
-.logo-nav-container{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+	font-family: 'Century Gothic';
 }
 
-.logoBior{
-    margin-left: 70px;
-    max-width:20%;
-    max-height:20%;    
+a{
+	text-decoration: none;
 }
 
-.tituloBior{
-    letter-spacing: 15px;
-    font-size: 1.4em;
+ul{
+	list-style: none;
 }
 
-
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    max-width: 992px;
-}
-.navigation ul{
-    margin:0;
-    padding:0;
-    list-style: none; 
+img{
+	max-width: 100%;
 }
 
+.title{
+	width: 100%;
+	background: #3FAF59;
+	height: 200px;
 
-.navigation ul {
-     display: flex;
-    list-style: none;
-    
-}
-.navigation ul ul{
-    display: none;
-}
-.navigation a {
-    
-    padding: 15px 20px;
-    text-decoration: none;
-    line-height: 32px;
-    font-family: sans-serif;
-    font-weight: 700;
-}
-.navigation a hover{
-    background-color: grey;
-    
-}
-.navigation a i{
-    margin-left: 10px;
-}
-.navigation ul li:hover> ul {
- opacity: 0.9;
- transition: all 0.3 sec ease;
- display: inline-block;
- position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-    
-.navigation ul li a{
-    display: block;
-    padding: 0.5rem 1rem;
-    color: rgb(19, 18, 18);
-    text-decoration: none;
+.title h1{
+	color: #fff;
+	font-size: 34px;
+	font-weight: 200;
+	text-align: center;
 }
 
-.navigation ul li a:hover {
-    background:rgba(255, 255, 255, 0.973);
-    opacity: 0.9;
+.navegacion{
+	width: 100%;
+	background: #1C1C1C;
 
+	display: flex;
+	justify-content: center;
+}
+.menu{
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 90px;
 }
 
-
-
-h3{
-    margin-top: 10%;
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: 60px;
-    color: rgb(255, 255, 255);
-    text-decoration: underline;  
-    background-color: rgb(78, 128, 172);  
-    padding-top: 40px;
-}   
-form{
-    background-color: rgb(219, 233, 226);
-    padding: 20px;
-    margin-bottom: 15%;
-    margin-top: 15%;
-    margin-left: 38%;
-    width: 300px;
-    border-radius: 3px;
-    font-size: 90%;
+.menu li{
+	flex-basis: 0;
+	flex-grow: 1;
+	border-right: 1px solid rgb(4, 70, 2);;
+	position: relative;
 }
 
-.field:focus{
-    border-color: rgb(23, 117, 62);
-}   
-
-input, textarea{
-    width: 280px;
-    outline: black;
+.menu .first-item{
+	border-left: 1px solid rgb(4, 70, 2);;
 }
 
-.footerFrase{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-right: 0rem;
-    text-align: center;
-    border: 5px solid;
-    font-size: 80%;
-    font-family: Arial, Helvetica, sans-serif;
+.menu li a{
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
 }
 
-.footerImagen{
-    bottom: 0;
-    margin-bottom: 5%;
-    margin-top: 35%;
-    max-width: 30%;
-    max-height: 30%;
-    margin-left: 35%;
-    align-items: center;
+.menu .imagen{
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	width: 0%;
+	z-index: 20;
+
+	-webkit-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -moz-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -o-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    -webkit-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -moz-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    -o-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+    transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
 }
 
-h2{
-    text-align: center;
-    color: rgb(26, 25, 25);
-    background-color: rgb(78, 128, 172);
-    margin-top: 15%;
-    margin-bottom: 5%;
-    margin-left: 10%;
-    font-size: 50px;
-    text-decoration: underline;
-    font-family:'Mukta', sans-serif;
+.menu li a .text-item{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	top: 0%;
+	position: absolute;
+	z-index: 10;
+    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
 }
 
-.formularioProveedores{
-    margin-left: 200px;
-    margin-right: 170px;
-    padding: 20px;
+.menu li a .down-item{
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	background: rgb(4, 70, 2);;
+
+	-webkit-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    -moz-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    -o-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    -moz-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
 
-.field{
-    border:black solid 1px;
-    padding: 10px; 
+.menu li:hover .down-item, .menu li:hover .text-item{
+	top: 100%;
+	height: 115%;
 }
 
-input, textarea{
-    width: 280px;
-    outline: black; 
-}
-
-h4{
-    margin-top: 3%;
-    margin-bottom: 3%;
-    line-height: 1-3em;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: underline;
-    color: rgb(247, 242, 242);
-    background-color: rgb(78, 128, 172);
-    font-family: 'Anton', sans-serif;
-}
-
-table{
-    width:90%;
-    height: auto;
-    background-color: rgb(187, 162, 162);
-    text-align: center;
-    border: black 1px;
-    border-collapse: collapse;
-    margin-bottom: 20%;
-    color:black;
-    font-family: 'Hind Siliguri', sans-serif;    
-}
-
-td{
-    border: solid 1px black;
-    padding: 30px;
-}
-
-th{
-    border: solid 1px black;
-    padding: 30px;
-    background-color: lavender;
-}
-
-
-.barra{
-    height: auto;
-    width: auto;
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.tituloBarra{
-    color:rgb(48, 46, 46);
-}
-
-h1{
-    margin-top: 3%;
-    margin-bottom: 3%;
-    line-height: 1-3em;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: underline;
-    background-color: rgb(78, 128, 172);
-}
-
-.barraHome{
-    margin-left: 200px;
-    margin-right: 50px;
-    max-width: 70%;
-    max-height: 70%;
-}
-
-.estiloParrafo{
-    margin-bottom: 5%;
-    margin-top: 5%;
-    font-size: 40px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif    
-}
-
-.biorCandies{
-    color:rgb(220, 20, 60);
-    font-size: 30px;
-    margin-bottom: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: aliceblue;
-}
-
-.tituloPrincipal{
-    color: whitesmoke;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 40px;
-}
-
-main div .barraHome{
-    margin-left: 40px;
-}
-
-
-.etiquetaBarra, .tablaBarra, .tipoBarra{
-    border: 1px solid black;
-    
-
-
-}
-.etiquetaBarra{
-    width: 100%;
-    background-color: rgb(231, 233, 141);
-}
-.tipoBarra, .tablaBarra {
-    padding: 10px;
-}
-.tipoBarra{
-    text-align: center;
-}
-
-.grid-container{
-    display: grid;
-    background-color: rgb(187, 139, 139);
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-}
-.grid-container div{
-    background-color: aquamarine;
-    text-align: center;
-    color: brown;
-    border: 1px black solid;
-}
-@media only screen and (max-width:769px) and (min-width:200px)
-
-{
-    .navigation{
-        display: block;
-        
-        max-width: 769px;
-    }
-    .navigation{
-        position:relative;
-        background-color: rgb(136, 197, 112);
-    }
-    .navigation ul{
-        flex-direction: column;
-       
-    }
-    .navigation li{
-        border: 1px solid black;
-       
-    }
-    .navigation ul li ul li{
-        background-color: white
-        
-    }
-
-   h2{
-       font-size:x-large;
-   }
-    .etiquetaBarra{
-   
-        background-color: rgb(216, 133, 191);
-    }
-    
-    .logoBior{
-        margin-left: 10px;
-        max-width:95px;
-        max-height:86px; 
-          
-    }
-   
-   
-}
-@media only screen and (max-width:1920px) and (min-width:769px)
-{
-    .etiquetaBarra{
-   
-        background-color: rgb(146, 194, 114);
-    }
-    .logoBior{
-        margin-left: 10px;
-        max-width:100px;
-        max-height:90px; 
-           
-    }
- 
-  
-  
+.menu li:hover .imagen{
+	width: 100%;
+	right: 0px;
 }
